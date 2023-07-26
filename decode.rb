@@ -26,8 +26,8 @@ MORSE_TABLE = {
   '-.--' => 'Y',
   '--..' => 'Z',
   ' ' => ' '
-}
+}.freeze
 
 def decode_char(morse)
-  MORSE_TABLE[morse]
+  MORSE_TABLE[morse] || ''
 end
