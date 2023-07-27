@@ -34,23 +34,23 @@ end
 
 def decode_word(morse_word)
   word = ''
-  morse_split = morse_word.split(' ')
+  morse_split = morse_word.split
   morse_split.each do |n|
     word += decode_char(n)
   end
-  return word
+  word
 end
 
 def decode_message(morse_message)
   message = ''
   morse_split = morse_message.split('   ')
   morse_split.each do |word|
-    message += decode_word(word) + ' '
+    message += "#{decode_word(word)} "
   end
-  return message
+  message
 end
 
-puts decode_char(".-")
+puts decode_char('.-')
 puts decode_word('-- -.--')
 puts decode_message('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
 # A BOX FULL OF RUBIES
