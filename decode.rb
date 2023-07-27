@@ -47,5 +47,10 @@ def decode_message(morse_message)
   morse_split.each do |word|
     message += decode_word(word) + ' '
   end
-  return message
+  return message
 end
+
+puts decode_char(".-")
+puts decode_word('-- -.--')
+puts decode_message('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
+#A BOX FULL OF RUBIES 
