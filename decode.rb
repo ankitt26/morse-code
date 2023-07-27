@@ -31,3 +31,12 @@ MORSE_TABLE = {
 def decode_char(morse)
   MORSE_TABLE[morse] || ''
 end
+
+def decode_word(morse_word)
+  word = ''
+  morse_split = morse_word.split(' ')
+  morse_split.each do |n|
+    word += decode_char(n)
+  end
+  return word
+end
