@@ -40,3 +40,12 @@ def decode_word(morse_word)
   end
   return word
 end
+
+def decode_message(morse_message)
+  message = ''
+  morse_split = morse_message.split('   ')
+  morse_split.each do |word|
+    message += decode_word(word) + ' '
+  end
+  return message
+end
