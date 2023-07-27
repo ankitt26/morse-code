@@ -53,4 +53,4 @@ end
 puts decode_char(".-")
 puts decode_word('-- -.--')
 puts decode_message('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
-#A BOX FULL OF RUBIES 
+# A BOX FULL OF RUBIES
