@@ -1,12 +1,9 @@
 <a name="readme-top"></a>
 
 <div align="center">
-
   <br/>
-
   <h3><b>MORSE CODE
 </b></h3>
-
 </div>
 
 <!-- TABLE OF CONTENTS -->
